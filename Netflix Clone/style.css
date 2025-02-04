@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.upper-sec {
+  background-image: url("bg-image.jpg");
+  background-repeat: no-repeat;
+  height: 96dvh;
+  background-size: cover;
+  background-position: center center;
+  width: 100dvw;
+}
+.box {
+  height: 96dvh;
+  width: 100dvw;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  background-position: center center;
+  position: absolute;
+}
+.top-bar {
+  height: 30dvh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10dvh;
+  max-width: 65dvw;
+  margin: auto;
+  position: relative;
+}
+.netflix-logo {
+  width: 10px;
+}
+
+.left-nav {
+  height: 10dvh;
+  width: 50%;
+  align-items: center;
+}
+
+.logo {
+  width: 25%;
+}
+.right-nav {
+  display: flex;
+  justify-content: right;
+  height: 10dvh;
+  width: 50%;
+  gap: 0.5dvw;
+  align-items: center;
+}
+.full-button {
+  display: flex;
+  height: 30%;
+  width: 20%;
+  border: 0.3px solid grey;
+  border-radius: 1px;
+  font-size: 0.2rem;
+}
+.lang-icon {
+  width: 20%;
+  height: 100%;
+  color: white;
+  align-content: center;
+  text-align: center;
+  padding-left: 2%;
+}
+select {
+  height: 100%;
+  width: 60%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 1px;
+  appearance: none;
+  text-align: center;
+  font-size: 0.2rem;
+}
+.drop-menu {
+  width: 10%;
+  height: 100%;
+  color: white;
+  align-content: center;
+  font-size: 0.15rem;
+}
+.sign {
+  height: 30%;
+  text-decoration: none;
+  width: 11%;
+  border-radius: 1px;
+  font-size: 3px;
+  text-align: center;
+  align-content: center;
+}
+.sign a {
+  height: 50%;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  border-radius: 1px;
+  font-weight: bolder;
+  font-size: 0.2%;
+  width: 90%;
+}
+.middle {
+  color: white;
+  position: relative;
+  margin: auto;
+}
+.middle-part {
+  justify-items: center;
+  width: 80dvw;
+  margin: auto;
+  height: 50%;
+}
+
+h1 {
+  /* display: flex; */
+  font-size: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+}
+.p-1 {
+  margin-top: 2%;
+  font-size: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+.p-2 {
+  margin-top: 2%;
+  font-size: 4px;
+  text-align: center;
+}
+.credentials {
+  justify-content: center;
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  height: 5%;
+  gap: 1px;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  width: 30%;
+  color: white;
+  font-size: 3px;
+  border: 0.3px solid grey;
+  opacity: 0.8;
+  padding-left: 1%;
+}
+.login {
+  height: 10px;
+  border-radius: 1px;
+}
+button {
+  background-color: red;
+  color: white;
+  justify-content: center;
+  font-size: 5px;
+  font-weight: bold;
+  border: none;
+  width: 14%;
+}
+.break {
+  height: 2px;
+  width: 100%;
+  background-color: red;
+}
+.mid-sec {
+  height: 22rem;
+  width: 100dvw;
+  background-color: black;
+}
+.content {
+  color: white;
+  margin: auto;
+  margin-top: 4%;
+  width: 60dvw;
+  height: 100dvh;
+}
+.slide {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  gap: 4%;
+  flex-wrap: wrap;
+  overflow: auto;
+  /* white-space: auto; */
+  margin-top: 3%;
+  min-width: 150px;
+  margin-bottom: 5%;
+}
+.movies {
+  height: 100%;
+  width: 35px;
+  padding: 0% 0% 4% 2%;
+  object-fit: cover;
+  position: relative;
+}
+.rank-1 {
+  position: absolute;
+  margin-right: 12px;
+  z-index: 10;
+  font-size: x-large;
+  color: black;
+  font-weight: 901;
+  -webkit-text-stroke: .4px rgb(207, 205, 205); 
+  margin-left: -5px;
+  margin-top: 25px;
+}
+.img-1 {
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.reasons {
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  height: 32%;
+  gap: 1.5%;
+  margin-bottom: 5%;
+}
+.reason-1 {
+  height: 100%;
+  width: 25%;
+  border-radius: 4px;
+  background-color: rgb(40, 40, 107);
+}
+.r-upper {
+  height: 60%;
+}
+.glow {
+  margin-left: 60%;
+  margin-top: 8%;
+  width: 45%;
+}
+.glow-img {
+  width: 60%;
+}
+.h-r {
+  font-size: 0.32rem;
+  padding: 10%;
+  /* height: 10%; */
+}
+.p-r {
+  font-size: 0.2rem;
+  padding-left: 10%;
+  color: rgb(153, 146, 146);
+  font-weight: 300;
+  /* height: 33%; */
+}
+.faq {
+  width: 100%;
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+  font-size: 5px;
+  /* background-color: black; */
+  height: 60%;
+}
+.faq-1 {
+  display: flex;
+  height: 25%;
+  padding-left: 2%;
+  background-color: rgb(45, 45, 45);
+  align-content: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+.plus {
+  width: 3%;
+  color: white;
+  filter: invert(1);
+}
+
+.p-3 {
+  margin-top: 6%;
+  font-size: 4px;
+  text-align: center;
+}
+#lower-input {
+  width: 55%;
+}
+#lower-button {
+  width: 18%;
+}
+
+footer {
+  background-color: black;
+  height: 50dvh;
+  width: 100dvw;
+}
+.details {
+  margin: auto;
+  height: 60px;
+  width: 60%;
+  padding-top: 2%;
+  color: rgb(150, 150, 150);
+}
+.contact {
+  font-size: 3.5px;
+}
+.links {
+  font-size: 0.17rem;
+  text-decoration: underline;
+}
+ul {
+  margin-top: 4%;
+  list-style-type: none;
+  display: grid;
+
+  grid-template-columns: 15dvw 15dvw 15dvw 15dvw;
+  row-gap: 25%;
+}
+
+.footer-button {
+  background-color: transparent;
+  border: 0.3px solid gray;
+  border-radius: 1px;
+  width: 12%;
+  font-size: 0.2rem;
+  padding: 1px;
+  opacity: 0.9;
+  margin-top: 10%;
+}
+.end-div {
+  font-size: 0.15rem;
+  margin-top: 2%;
+  font-weight: bold;
+}
+.full-button-2 {
+  display: flex;
+  width: 10%;
+  height: 10%;
+  font-size: 0.2rem;
+  border: 0.3px solid grey;
+  border-radius: 1px;
+  margin-top: 10%;
+}
