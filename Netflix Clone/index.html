@@ -14,13 +14,19 @@
     <title>Netflix Clone</title>
   </head>
   <body>
-    <main>
+    <header>
       <div class="upper-sec">
         <div class="box"></div>
         <div class="top-bar">
-          <header>
+          <div class="head-div">
             <div class="left-nav">
-              <img class="logo" src="assets/logo.svg" alt="" />
+              <div class="logo">
+                <img
+                  src="./assets/jpg_files/logo.svg"
+                  alt=""
+                  style="width: 30%"
+                />
+              </div>
             </div>
 
             <div class="right-nav">
@@ -47,7 +53,7 @@
 
               <button class="sign" type="submit">Sign In</button>
             </div>
-          </header>
+          </div>
         </div>
 
         <div class="middle">
@@ -68,55 +74,61 @@
           </div>
         </div>
       </div>
-      <div class="mid-sec">
-        <div class="break"></div>
+    </header>
+
+    <div class="break"></div>
+
+    <main>
+
+
+
         <div class="content">
-          <h2 style="font-size: 8px">Trending Now</h2>
+          <h2>Trending Now</h2>
 
           <div class="slide">
             <div class="movies">
               <div class="rank-1">1</div>
-              <img class="img-1" src="/assets/pushpa2.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/pushpa2.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">2</div>
-              <img class="img-1" src="/assets/squid.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/squid.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">3</div>
-              <img class="img-1" src="/assets/lucky.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/lucky.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">4</div>
-              <img class="img-1" src="/assets/bhool3.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/bhool3.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">5</div>
-              <img class="img-1" src="/assets/venom.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/venom.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">6</div>
-              <img class="img-1" src="/assets/mis.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/mis.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">7</div>
-              <img class="img-1" src="/assets/amaran.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/amaran.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">8</div>
-              <img class="img-1" src="/assets/devara.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/devara.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">9</div>
-              <img class="img-1" src="/assets/black.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/black.jpg" alt="" />
             </div>
             <div class="movies">
               <div class="rank-1">10</div>
-              <img class="img-1" src="/assets/kutty.jpg" alt="" />
+              <img class="img-1" src="assets/jpg_files/kutty.jpg" alt="" />
             </div>
           </div>
 
-          <h2 style="font-size: 8px">More reasons to join</h2>
+          <h2>More reasons to join</h2>
           <div class="reasons">
             <div class="reason-1">
               <div class="r-upper">
@@ -176,26 +188,44 @@
             </div>
           </div>
 
-          <h2 style="font-size: 8px">Frequently Asked Questions</h2>
+          <h2>Frequently Asked Questions</h2>
 
           <div class="faq">
             <div class="faq-1">
-              What is Netflix?<img src="plus.svg" class="plus" />
+              What is Netflix?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
             <div class="faq-1">
-              How much does Netflix cost?<img src="plus.svg" class="plus" />
+              How much does Netflix cost?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
             <div class="faq-1">
-              Where can I watch?<img src="plus.svg" class="plus" />
+              Where can I watch?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
             <div class="faq-1">
-              How do I cancel?<img src="plus.svg" class="plus" />
+              How do I cancel?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
             <div class="faq-1">
-              What can I watch on Netflix?<img src="plus.svg" class="plus" />
+              What can I watch on Netflix?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
             <div class="faq-1">
-              Is Netflix good for kids?<img src="plus.svg" class="plus" />
+              Is Netflix good for kids?<img
+                src="assets/svg_files/plus.svg"
+                class="plus"
+              />
             </div>
           </div>
 
@@ -217,14 +247,13 @@
             </button>
           </div>
         </div>
-      </div>
     </main>
 
     <footer>
       <div class="details">
-        <div class="contact">Questions? Call <u>000-800-919-1743</u></div>
+        <div class="contact">Questions? Call <u class="contact">000-800-919-1743</u></div>
         <div class="links">
-          <ul>
+          <ul class="links">
             <li>FAQ</li>
             <li>Help Centre</li>
             <li>Account</li>
@@ -245,9 +274,9 @@
 
         <div class="full-button-2">
           <div class="lang-icon">
-            <i class="fa-solid fa-language" style="width: 100%"></i>
+            <i class="fa-solid fa-language"></i>
           </div>
-          <select name="">
+          <select name="" class="select-2">
             <option
               style="color: black"
               value="English"
