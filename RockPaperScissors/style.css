@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(47, 138, 223);
+  font-size: 200%;
+  font-weight: bolder;
+}
+main{
+  justify-items: center;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 4rem;
+}
+.images {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.images:hover {
+  background-color: black;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.score-board {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  gap: 4rem;
+  font-size: 40px;
+  margin-top: 4rem;
+}
+#your,
+#compdigit {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.you,
+.comp-score {
+  justify-items: center;
+}
+
+#btn {
+  background-color: rgb(26, 166, 221);
+  height: 60px;
+  font-size: 40px;
+  color: white;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  padding: .5rem;
+}
