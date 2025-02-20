@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "start": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "start": "tailwindcss -i ./input.css -o ./output.css --watch"
   }
 }
