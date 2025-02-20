@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Clone</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="">
+    <nav
+      class="flex justify-around h-14 items-center gap-[6vmin] md:pr-[3vmin]"
+    >
+      <div class="flex space-x-6 items-center md:order-2">
+        <div class="cursor-pointer md:hidden text-[20px]">&#9776;</div>
+
+        <div class="md:hidden">
+          <img src="search.svg" alt="" class="w-5" />
+        </div>
+      </div>
+      <div class="flex space-x-8 items-center md:ml-[2vmin]">
+        <div>
+          <img
+            src="https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png"
+            alt=""
+            class="w-28 md:order-1"
+          />
+        </div>
+
+        <ul
+          class="hidden md:flex text-sm space-x-4 items-center md:text-[12px] lg:text-[14px]"
+        >
+          <li>Microsoft 365</li>
+          <li>Teams</li>
+          <li>Copilot</li>
+          <li>Windows</li>
+          <li>Surface</li>
+          <li>Xbox</li>
+          <li>Support</li>
+        </ul>
+      </div>
+
+      <div class="flex space-x-6 md:order-3 items-center">
+        <div class="hidden md:flex items-center gap-2">
+          <span class="hidden xl:block text-[14px]">Search</span
+          ><img src="search.svg" alt="" class="w-5" />
+        </div>
+        <div class="hidden md:flex items-center gap-2">
+          <span class="hidden xl:block text-[14px]">Cart</span
+          ><img src="cart.svg" alt="" class="w-5" />
+        </div>
+        <div class="hidden md:flex items-center gap-2">
+          <span class="hidden xl:block text-[14px]">Sign in</span
+          ><img src="account.svg" alt="" class="w-10" />
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-full lg:flex flex-row-reverse items-center lg:h-[40vmax] max-h-[65vh] bg-gradient-to-r from-[#ACC2FC] to-[#B8D9EC]"
+    >
+      <div class="lg:w-2/3 lg:h-[100%]">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce:VP2-859x540"
+          alt=""
+          class="w-full h-[100%]"
+        />
+      </div>
+
+      <div
+        class="p-6 shadow-md shadow-gray-300 sm:mb-[30] sm:relative sm:bg-white sm:-mt-10 sm:w-[97%] sm:ml-[1.5vw] sm:mr-[1.5vw] lg:mt-0 lg:shadow-none lg:w-1/2 lg:ml-0 lg:mr-0 lg:h-[100%] bg-white lg:bg-transparent lg:place-content-center lg:p-30 break-words"
+      >
+        <h1 class="text-2xl font-bold md:text-4xl">
+          Achieve the extraordinary
+        </h1>
+        <p class="mt-2 md:mt-5">
+          Microsoft 365 delivers cloud storage, security and Microsoft Copilot
+          in your favourite apps - all in one plan.
+        </p>
+        <button class="bg-[#0067B8] text-white mt-4 p-2.5 font-bold">
+          Shop Microsoft 365
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="flex items-center justify-center gap-1 mt-[6vmin] sm:mt-[10vmin] md:mt-[20vmin] lg:mt-2"
+    >
+      <img src="pause.svg" alt="" class="w-10" />
+      <img src="left.svg" alt="" class="w-12" />
+      <div class="flex gap-4">
+        <img src="bullet.svg" alt="" class="w-5" />
+        <img src="bullet.svg" alt="" class="w-5" />
+      </div>
+      <img src="right.svg" alt="" class="w-12" />
+    </div>
+
+    <div
+      class="logos flex flex-wrap gap-x-10 justify-center space-y-6 pl-4 pr-4 mt-6 md:mt-12"
+    >
+      <div
+        class="flex flex-col items-center space-y-2 text-[#0067B8] font-bold underline"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
+          alt=""
+          class="w-10"
+        />
+        <a>Choose your Microsoft 365</a>
+      </div>
+
+      <div
+        class="flex flex-col items-center space-y-2 text-[#0067B8] font-bold underline"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40"
+          alt=""
+          class="w-10"
+        />
+        <a href="">Shop Xbox</a>
+      </div>
+
+      <div
+        class="flex flex-col items-center space-y-2 text-[#0067B8] font-bold underline"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
+          alt=""
+          class="w-10"
+        />
+        <a href="">Get Windows 11</a>
+      </div>
+      <div
+        class="flex flex-col items-center space-y-2 text-[#0067B8] font-bold underline"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40"
+          alt=""
+          class="w-10"
+        />
+        <a href="">Explore Surface devices</a>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col p-[5vmin] sm:grid grid-cols-2 gap-8 md:gap-x-[3vmin] lg:gap-x-[6vmin] space-y-12 justify-items-center sm:space-y-0 lg:gap-y-[8vmin] xl:grid-cols-4 xl:gap-x-6 xl:pr-20 xl:pl-20 2xl:pr-40 2xl:pl-40"
+    >
+      <div class="first flex flex-col shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-AI-7Ed-Sapphire-MC001?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <h1 class="text-[3vh] font-bold">Surface Laptop, Copilot+ PC</h1>
+            <p class="">
+              Unlock AI features like Live Captions and Cocreator with this
+              exceptionally powerful laptop.
+            </p>
+          </div>
+
+          <span class="">
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Learn more
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="second flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <h1 class="text-[3vh] font-bold">Xbox Series S</h1>
+            <p class="">Next-gen performance in the smallest Xbox ever.</p>
+          </div>
+          <span class="">
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Shop Xbox Series S
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="third flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <h1 class="text-[3vh] font-bold">Xbox Series X</h1>
+            <p class="">The fastest, most powerful Xbox ever.</p>
+          </div>
+
+          <span class="-mb-2"
+            ><button class="bg-[#0067B8] text-white p-2 font-bold">
+              Shop Xbox Series X
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="fourth flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Copilot-Native-App-ROW?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <h1 class="text-[3vh] font-bold">Copilot is your AI companion</h1>
+            <p class="">
+              Always by your side, ready to support you whenever and wherever
+              you need it.
+            </p>
+          </div>
+          <span class="-mb-2"
+            ><button class="bg-[#0067B8] text-white p-2 font-bold">
+              Download the Copilot app
+            </button></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="p-4 w-full lg:flex items-center justify-start lg:h-[55vmax] lg:pr-12 lg:pl-12 lg:relative xl:h-[43vmax] xl:pr-6 xl:pl-6 2xl:p-18 2xl:pr-25 2xl:pl-25"
+    >
+      <div class="lg:w-full lg:h-[100%] xl:mr-15 xl:ml-15">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Gane-Avowed-Landscape:VP2-859x540"
+          alt=""
+          class="w-full h-[100%] lg:hidden"
+        />
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Gane-Avowed-Landscape:VP5-1596x600"
+          alt=""
+          class="w-full h-[100%] hidden lg:block"
+        />
+      </div>
+
+      <div
+        class="p-6 mt-3 md:shadow-md shadow-gray-300 md:mb-[30] md:relative md:bg-white md:-mt-10 md:w-[97%] md:ml-[1.5vw] md:mr-[1.5vw] lg:shadow-none lg:bg-white lg:place-content-center lg:p-14 break-words lg:absolute lg:h-[70%] lg:w-[30%] lg:mt-0 lg:ml-14 xl:h-2/3 xl:ml-35 2xl:h-[38vmin] 2xl:w-[50vmin]"
+      >
+        <h1 class="text-2xl font-bold md:text-4xl">
+          Forge your destiny in Avowed
+        </h1>
+        <p class="mt-2 md:mt-5">
+          Can you save the Living Lands - and your own soul - before it's too
+          late?
+        </p>
+        <div class="flex items-center space-x-6 mt-3 lg:flex-wrap space-y-4">
+          <button class="bg-[#0067B8] text-white mt-4 p-2.5 font-bold">
+            Shop now</button
+          ><span class="flex items-center space-x-1"
+            ><img src="play-button.svg" alt="" />
+            <span class="text-[#0067B8] font-bold"
+              >Watch the trailer</span
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <h1
+      class="flex justify-start text-2xl lg:text-3xl xl:text-4xl font-bold mt-8 md:mt-16 mx-[5vmin] xl:mx-[9vmin] 2xl:mx-[19vmin]"
+    >
+      For business
+    </h1>
+    <div
+      class="flex flex-col p-[5vmin] sm:grid grid-cols-2 -mt-5 gap-8 md:gap-x-[3vmin] lg:gap-x-[6vmin] space-y-12 justify-items-center sm:space-y-0 xl lg:gap-y-[8vmin] xl:grid-cols-4 xl:gap-x-6 xl:p-20 2xl:p-40 xl:-mt-10 2xl:-mt-30"
+    >
+      <div class="first flex flex-col shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <span class="w-2 bg-yellow-500 font-bold pl-3 pr-3 pt-1 pb-1"
+              >New</span
+            >
+            <h1 class="text-[3vh] font-bold">
+              Surface Pro for Business, Copilot+ PC (Intel)
+            </h1>
+            <p class="">
+              Ultra-versatile and built with Intel® Core™ Ultra processors
+              (Series 2) that power AI experiences to amplify your team’s
+              productivity.
+            </p>
+          </div>
+
+          <span class="">
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Learn more
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="second flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Copilot-Commercial?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <span
+              class="w-2 invisible bg-yellow-500 font-bold pl-3 pr-3 pt-1 pb-1"
+              >New</span
+            >
+            <h1 class="text-[3vh] font-bold">Microsoft 365 Copilot</h1>
+            <p class="">
+              Save time and focus on the things that matter most with AI in
+              Microsoft 365 for business.
+            </p>
+          </div>
+          <span class="">
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Learn more
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="third flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <span
+              class="w-2 invisible bg-yellow-500 font-bold pl-3 pr-3 pt-1 pb-1"
+              >New</span
+            >
+            <h1 class="text-[3vh] font-bold">Join the era of AI</h1>
+            <p class="">
+              Create, communicate, and code with the latest Microsoft AI
+              solutions.
+            </p>
+          </div>
+
+          <span class="-mb-2"
+            ><button class="bg-[#0067B8] text-white p-2 font-bold">
+              Explore AI solutions
+            </button></span
+          >
+        </div>
+      </div>
+
+      <div class="fourth flex flex-col w-full shadow-md shadow-gray-300">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=406&hei=230&fit=crop"
+          alt=""
+          class="w-full object-cover"
+        />
+
+        <div class="p-6 flex flex-col justify-between gap-4 h-full">
+          <div>
+            <span
+              class="w-2 invisible bg-yellow-500 font-bold pl-3 pr-3 pt-1 pb-1"
+              >New</span
+            >
+            <h1 class="text-[3vh] font-bold">Visual Studio 2022</h1>
+            <p class="">
+              Get the most comprehensive IDE for .NET and C++ developers on
+              Windows for building web, cloud, desktop, mobile apps, services
+              and games.
+            </p>
+          </div>
+          <span class="-mb-2"
+            ><button class="bg-[#0067B8] text-white p-2 font-bold">
+              Download Visual Studio 2022
+            </button></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-wrap items-center justify-start gap-[2vmin] mt-10 lg:mt-14 mx-[5vmin] xl:mx-[9vmin] 2xl:mx-[19vmin] 2xl:-mt-10"
+    >
+      <div>Follow Microsoft</div>
+
+      <div class="flex gap-2">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Facebook 2x?scl=1"
+          alt=""
+          class="w-8"
+        />
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-MSCOM-X-64x64?scl=1"
+          alt=""
+          class="w-8"
+        />
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube 2x?scl=1"
+          alt=""
+          class="w-8"
+        />
+      </div>
+    </div>
+    <div class="flex justify-end p-4">
+      <button
+        class="bg-[#D9D9D9] flex justify-start items-center gap-2 font-bold p-1 pr-5"
+      >
+        <img src="arrow.svg" alt="" />Back to top
+      </button>
+    </div>
+
+    <footer class="bg-[#F2F2F2] pb-5">
+      <div
+        class="flex flex-col mt-10 p-5 pt-10 gap-5 sm:grid grid-cols-3 sm:pl-[4vmin] sm:pr-[4vmin] lg:grid-cols-6 lg:pl-15 lg:pr-15 lg:gap-8 xl:pl-20 2xl:pl-40 2xl:pr-30"
+      >
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            What's new
+          </li>
+          <li>Surface Pro</li>
+          <li>Surface Laptop</li>
+          <li>Microsoft Copilot</li>
+          <li>Microsoft 365</li>
+          <li>Explore Microsoft products</li>
+          <li>Windows 11 apps</li>
+        </ul>
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            Microsoft Store
+          </li>
+          <li>Account profile</li>
+          <li>Download Center</li>
+          <li>Microsoft Store Support</li>
+          <li>Returns</li>
+          <li>Order tracking</li>
+        </ul>
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            Education
+          </li>
+          <li>Mircrosoft in education</li>
+          <li>Devices for education</li>
+          <li>Microsoft Teams for Education</li>
+          <li>Microsoft 365 Education</li>
+          <li>Office Education</li>
+          <li>Educator training and development</li>
+          <li>Deals for students and parents</li>
+          <li>Azure for students</li>
+        </ul>
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            Business
+          </li>
+          <li>Microsoft Cloud</li>
+          <li>Microsoft Security</li>
+          <li>Azure</li>
+          <li>Dynamics 365</li>
+          <li>Microsoft 365</li>
+          <li>Microsoft Advertising</li>
+          <li>Microsoft 365 Copilot</li>
+          <li>Microsoft Teams</li>
+        </ul>
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            Developer & IT
+          </li>
+          <li>Microsoft Developer</li>
+          <li>Documentation</li>
+          <li>Microsoft Learn</li>
+          <li>Microsoft Tech Community</li>
+          <li>Azure Marketplace</li>
+          <li>AppSource</li>
+          <li>Microsoft Power Platform</li>
+          <li>Visual Studio</li>
+        </ul>
+        <ul
+          class="flex flex-col gap-3 text-[#616161] text-[3vmin] sm:text-[1.75vmin] lg:text-[12px]"
+        >
+          <li
+            class="text-[#616161] font-bold text-[5vmin] sm:text-[2.5vmin] lg:text-[15px]"
+          >
+            Company
+          </li>
+          <li>Careers</li>
+          <li>About Microsoft</li>
+          <li>Company news</li>
+          <li>Privacy at Microsoft</li>
+          <li>Investors</li>
+          <li>Security</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+
+      <div
+        class="flex flex-col p-[4vmin] sm:flex-row justify-between gap-4 pb-3 sm:items-center sm:gap-[12vmin] lg:pl-[6vmin] lg:pr-[12vmin] xl:pl-20 2xl:pl-40 2xl:pr-40"
+      >
+        <ul
+          class="flex flex-col text-[3vmin] sm:text-[1.75vmin] gap-6 text-[#616161] lg:text-[12px] lg:flex-row"
+        >
+          <li class="flex gap-2">
+            <img src="earth.svg" alt="" class="w-5" /> English (india)
+          </li>
+          <li class="flex gap-2">
+            <img src="tick.svg" alt="" class="w-8" /> Your Privacy Choices
+          </li>
+          <li>Consumer Health Privacy</li>
+        </ul>
+        <ul
+          class="flex text-[#616161] text-[3vmin] sm:text-[1.75vmin] flex-wrap md:flex-nowrap gap-3 md:gap-3 lg:text-[12px] lg:gap-4"
+        >
+          <li>Contact Microsoft</li>
+          <li>Privacy</li>
+          <li>Terms of use</li>
+          <li>Trademarks</li>
+          <li>About our ads</li>
+          <li>&copy; Microsoft 2025</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
