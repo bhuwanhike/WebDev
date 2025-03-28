@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racing Car</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      @keyframes moveX {
+        100% {
+          transform: translateX(-200vw);
+        }
+      }
+      @keyframes shake {
+        0% {
+          transform: translatey(-5px);
+        }
+        50% {
+          transform: translatey(5px);
+        }
+        100% {
+          transform: translatey(-5px);
+        }
+      }
+      @keyframes shakebody {
+        0% {
+          transform: translatey(-5px);
+        }
+        50% {
+          transform: translatey(5px);
+        }
+        100% {
+          transform: translatey(-5px);
+        }
+      }
+    </style>
+  </head>
+  <body class="animate-[shake_2s_linear_infinite]">
+    <audio src="/assets/sound.mp3" autoplay loop></audio>
+    <div class="w-screen h-screen bg-[url(/assets/background.jpg)] absolute">
+      <div
+        class="trees w-full h-200 bg-[url(/assets/trees.png)] -mt-15 absolute"
+      >
+        <div
+          class="car flex flex-col w-80 absolute ml-80 mt-130 z-40 animate-[shake_2s_linear_infinite]"
+        >
+          <img src="/assets/car_body.png" alt="" />
+          <div class="flex -mt-15 justify-center gap-22 mr-4">
+            <img
+              src="/assets/car_wheel_left.png"
+              alt=""
+              class="w-18 animate-spin"
+            />
+            <img src="/assets/car_wheel_right.png"" alt="" class="w-18
+            animate-spin"/>
+          </div>
+        </div>
+        <div
+          class="track w-[1000vw] h-100 bg-[url(/assets/track.png)] mt-150 absolute animate-[moveX_5s_linear_infinite]"
+        ></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

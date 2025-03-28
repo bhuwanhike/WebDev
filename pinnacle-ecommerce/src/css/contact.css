@@ -1,0 +1,46 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.main {
+  margin-top: 10vh;
+  padding: 6% 10%;
+}
+.description {
+  font-size: 1vw;
+  /* margin-top: 1vw; */
+}
+form {
+  margin-top: 2vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  font-size: 2.5vh;
+  padding: 1vw;
+}
+.input {
+  height: 6vh;
+  padding: 1vh;
+  font-size: 1.5vh;
+  padding: 1vh;
+  border: 1px solid gray;
+
+  &::placeholder {
+    font-size: 0.9vw;
+  }
+  background-color: white;
+}
+.textarea {
+  height: 16vh;
+}
+.send {
+  width: 10vw;
+  height: 5vh;
+  background-color: #2a2b30;
+  border: none;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+  border-radius: 10px;
+}

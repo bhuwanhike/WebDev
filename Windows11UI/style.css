@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/bg.jpeg);
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+}
+footer {
+  position: absolute;
+  /* height: 45px; */
+  background-color: #f3f3f3;
+  bottom: 0;
+}
+.taskbar {
+  width: 100vw;
+  height: 45px;
+  bottom: 0;
+  margin: 0.5vh;
+  display: flex;
+  justify-content: center;
+}
+.right {
+  position: absolute;
+  right: 0;
+}
+.menu {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -610px;
+  transition: all 0.1s ease-in-out;
+  /* background: red; */
+}

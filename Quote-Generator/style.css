@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: palevioletred;
+}
+
+.container {
+  width: 40vw;
+  height: 45vh;
+  margin: auto;
+  background-color: white;
+  margin-top: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 3vw;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+p {
+  font-size: 1.5vw;
+}
+.author {
+  text-align: end;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  justify-content: flex-end;
+}
+.author div {
+  width: 2vw;
+  height: 0.3vh;
+  background-color: aqua;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 4vw;
+}
+
+.buttons .button {
+  background-color: dodgerblue;
+  color: white;
+  width: 6vw;
+  padding: 1.5vh;
+  border-radius: 50px;
+  border: none;
+}
+
+.buttons .button2 {
+  background-color: white;
+  color: black;
+  border: 1px solid dodgerblue;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  justify-content: center;
+}
+img {
+  width: 20px;
+}

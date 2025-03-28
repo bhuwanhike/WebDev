@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: darkblue;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 50%;
+        height: 100vh;
+
+        display: flex;
+        margin: auto;
+        margin-top: 10vw;
+        gap: 2vw;
+      }
+      .cont {
+        height: 50vh;
+        width: 20vw;
+        border: 1px dashed white;
+        padding: 20px;
+      }
+      .draggers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+      }
+      .button {
+        background-color: rgb(212, 70, 94);
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="cont">
+        <div class="draggers contleft">
+          <div class="button">List Item 1</div>
+          <div class="button">List Item 2</div>
+          <div class="button">List Item 3</div>
+          <div class="button">List Item 4</div>
+        </div>
+      </div>
+      <div class="cont">
+        <div class="draggers contright"></div>
+      </div>
+    </div>
+    <script>
+      let draggers = document.querySelectorAll(".button");
+      let rightcont = document.querySelector(".contright");
+      let leftcont = document.querySelector(".contleft");
+
+      draggers.forEach((e) => {
+        e.addEventListener("dragstart", (e) => {
+          e.stopPropagation();
+          let selected = e.target;
+          rightcont.addEventListener("dragover", (e) => {
+            e.preventDefault();
+          });
+          rightcont.addEventListener("drop", (e) => {
+            rightcont.appendChild(selected);
+            selected = null;
+          });
+          leftcont.addEventListener("dragover", (e) => {
+            e.preventDefault();
+          });
+          leftcont.addEventListener("drop", (e) => {
+            leftcont.appendChild(selected);
+            selected = null;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinnacle Ecommerce Store</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/toast.css" />
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="section-navbar"></div>
+
+    <!-- Toast -->
+    <div class="toast"></div>
+
+    <!-- End of Toast -->
+
+    <div class="hero">
+      <div class="left">
+        <h1>Your Destination for Cutting-Edge Gadgets!</h1>
+        <p>
+          Welcome to Pinnacle ecommerce store, your ultimate destination for
+          cutting-edge gadgets! Explore the latest in tech innovation and style
+          with us. Shop now and discover a world of possibilities!
+        </p>
+        <button>Explore Our Products</button>
+      </div>
+      <div class="right"><img src="/assets/hero.png" alt="" /></div>
+    </div>
+
+    <div class="intro">
+      <h1>Streamline ordering from search to fulfillment, all in one place</h1>
+
+      <div class="hero-2">
+        <div class="left">
+          <div class="options">
+            <div class="option option1">
+              <div class="img-icon">
+                <img src="/assets/svgicon/search-icon.svg" alt="" />
+              </div>
+              <div class="option-content">
+                <div class="heading">Search for matches</div>
+                <p>
+                  Search and filter from millions of product and supplier
+                  offerings to find the matching ones for your business.
+                </p>
+              </div>
+            </div>
+            <div class="option option2">
+              <div class="img-icon">
+                <img src="/assets/svgicon/payment-icon.svg" alt="" />
+              </div>
+              <div class="option-content">
+                <div class="heading">Identify the right one</div>
+                <p>
+                  Evaluate product quality and supplier capabilities easily and
+                  efficiently through verified inspections and digital sourcing
+                  tools.
+                </p>
+              </div>
+            </div>
+            <div class="option option3">
+              <div class="img-icon">
+                <img src="/assets/svgicon/confidence-icon.svg" alt="" />
+              </div>
+              <div class="option-content">
+                <div class="heading">Pay with confidence</div>
+                <p>
+                  Pay for your order in over 20 currencies via 20+ secure
+                  payment methods, including flexible payment terms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-2">
+          <img src="/assets/middle-sec/first.png" class="right-img" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="partition"></div>
+
+    <!-- Start of Products section-->
+
+    <section class="section-products">
+      <div class="container-heading">
+        <div class="section-common-heading">Explore our products</div>
+        <section class="container-templates">
+          <div id="productContainer"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Start Product Teplate Section -->
+
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"> </span>
+          <div class="imageContainer">
+            <img src="" alt="" class="productImage" />
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <img src="/assets/svgicon/star.svg" alt="" />
+            <img src="/assets/svgicon/star.svg" alt="" />
+            <img src="/assets/svgicon/star.svg" alt="" />
+            <img src="/assets/svgicon/star.svg" alt="" />
+            <img src="/assets/svgicon/star.svg" alt="" />
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+
+          <div class="productStockElement commonstyle">
+            <p class="productPropert">Total Stocks Available:</p>
+            <p class="productStock"></p>
+          </div>
+
+          <div class="productQuantityElement commonstyle">
+            <p class="productPropert">Quantity:</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <p class="out-of-stock">No more stocks left.</p>
+          <button class="add-to-cart">
+            <img src="/assets/svgicon/cart.svg" alt="" />Add to cart
+          </button>
+        </article>
+      </div>
+    </template>
+    <!-- End Product Teplate Section -->
+
+    <!-- End of Products section-->
+
+    <div class="section-footer"></div>
+    <script type="module" src="/src/js/main.js"></script>
+
+    <script type="module" src="/components/navbar.js"></script>
+    <script type="module" src="/components/footer.js"></script>
+  </body>
+</html>

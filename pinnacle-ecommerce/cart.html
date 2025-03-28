@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart- Pinnacle Ecommerce Store</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/cartPage.css" />
+    <link rel="stylesheet" href="/src/css/toast.css" />
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="section-navbar"></div>
+    <div class="toast"></div>
+    <!-- Start of Products section-->
+
+    <section class="cart-products">
+      <section class="cartProduct-templates">
+        <div id="productCart"></div>
+      </section>
+    </section>
+
+    <!-- Start Product Teplate Section -->
+
+    <template id="cartProductTemplate">
+      <div class="cart-cards" id="cart-cardValue">
+        <article class="cart-information [cart-card]">
+          <div class="cate"><span class="category"> </span></div>
+
+          <div class="imageName">
+            <div class="cart-imageContainer">
+              <img src="" alt="" class="productImage" />
+            </div>
+            <div class="red-alert">
+              <h2 class="productName"></h2>
+              <p class="out-of-stock">No more stocks left.</p>
+            </div>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+          </div>
+
+          <div class="productQuantityElement commonstyle">
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="remove-from-cart">
+            <img src="/assets/svgicon/delete.svg" alt="" />Remove
+          </button>
+        </article>
+      </div>
+    </template>
+    <!-- End Product Teplate Section -->
+
+    <!-- End of Products section-->
+
+    <div class="payment-section">
+      <div class="summary">
+        <div>
+          <h2>Order Summary</h2>
+          <p>
+            Subtotal (<span class="total-items"></span> items):
+            <span class="total-price">$17</span>
+          </p>
+        </div>
+        <div class="payment-button">Proceed to pay</div>
+      </div>
+    </div>
+
+    <div class="section-footer"></div>
+
+    <script type="module" src="/components/navbar.js"></script>
+    <script type="module" src="/src/js/cartPage.js"></script>
+    <script type="module" src="/src/js/checkout.js"></script>
+    <script type="module" src="/components/footer.js"></script>
+  </body>
+</html>

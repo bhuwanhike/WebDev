@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .rect {
+        width: 20vw;
+        height: 10vw;
+        margin: auto;
+        margin-top: 10vw;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rect"></div>
+    <script>
+      let rectangle = document.querySelector(".rect");
+
+      rectangle.addEventListener("mousemove", (details) => {
+        let rectlocation = rectangle.getBoundingClientRect();
+        let centre = (rectlocation.right - rectlocation.left) / 2;
+        let pointer = details.clientX;
+        console.log(pointer);
+        if (pointer - rectlocation.left < centre) {
+          rectangle.style.background = `linear-gradient(to right, #f5051d ${
+            ((pointer - rectlocation.left) / rectlocation.width) * 100
+          }%, #4d6bb0)`;
+          rectangle.style.transform = "translateX(-20%)";
+        } else {
+          rectangle.style.background = `linear-gradient(to right, #e66367 ${
+            ((rectlocation.right - pointer) / rectlocation.width) * 100
+          }%, #054ffc)`;
+        }
+      });
+    </script>
+  </body>
+</html>

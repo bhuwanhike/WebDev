@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      .container {
+        color: white;
+        width: 20vw;
+        /* background-color: red; */
+        height: 15vw;
+        margin: auto;
+        margin-top: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+      }
+      .container button {
+        padding: 1vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="stopwatch">00:00:00</h1>
+
+      <div>
+        <button class="stop">Stop</button>
+        <button class="start">Start</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <script>
+      let timer = document.getElementById("stopwatch");
+      let reset = document.querySelector(".reset");
+      let start = document.querySelector(".start");
+      let stoptimer = document.querySelector(".stop");
+      let time = [0, 0, 0];
+      let interval = null;
+
+      function stopwatch() {
+        time[2]++;
+        let h = time[0] < 10 ? "0" + time[0] : time[0];
+        let m = time[1] < 10 ? "0" + time[1] : time[1];
+        let s = time[2] < 10 ? "0" + time[2] : time[2];
+        timer.innerHTML = `${h}:${m}:${s}`;
+        if (time[2] >= 60) {
+          time[1]++;
+          time[2] = 0;
+        }
+        if (time[1] >= 60) {
+          time[0]++;
+          time[1] = 0;
+        }
+      }
+
+      start.addEventListener("click", () => {
+        if (interval === null) {
+          interval = setInterval(stopwatch, 1000);
+        }
+      });
+
+      stoptimer.addEventListener("click", () => {
+        clearInterval(interval);
+        interval = null;
+      });
+
+      reset.addEventListener("click", () => {
+        time[0] = 0;
+        time[1] = 0;
+        time[2] = 0;
+        timer.innerHTML = "00:00:00";
+      });
+    </script>
+  </body>
+</html>

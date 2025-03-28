@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <!-- <img src="dlt.svg" alt="" width=""> -->
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore
+        sint, consequatur doloribus ea voluptates nemo, esse eaque voluptatum
+        doloremque libero cum corrupti natus fugit nihil molestiae! Ea omnis
+        dolorum deserunt aut, reiciendis mollitia totam in nostrum hic amet
+        sequi?
+      </p>
+      <h2>Your Passwords</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>>Delete</th>
+          <!-- <img onclick= "deletepassword('${data[i].website}')" src="dlt.svg;" /> -->
+        </tr>
+      </table>
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

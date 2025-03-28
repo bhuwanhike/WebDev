@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="w-screen h-screen bg-gradient-to-br from-blue-600 to-fuchsia-700"
+  >
+    <div
+      class="box flex flex-col w-150 h-100 mx-auto mt-50 rounded-2xl bg-white p-8 items-start gap-6"
+    >
+      <h1 class="flex items-center gap-2 text-3xl font-bold">
+        To-Do List <img src="/images/icon.png" alt="" class="w-8" />
+      </h1>
+      <div class="input flex bg-[#EAECEF] rounded-4xl">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="inp p-6 w-100 h-14 border-none"
+          placeholder="Add your task"
+        /><button
+          class="add bg-orange-500 h-14 w-30 rounded-4xl text-white font-bold"
+        >
+          Add
+        </button>
+      </div>
+      <ul
+        class="infinity w-125 flex flex-col gap-4 overflow-auto"
+        style="scrollbar-width: none"
+      ></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Learning Tailwind</title>
+  </head>
+  <body class="bg-slate-950">
+    <nav
+      class="w-full flex bg-indigo-300 min-h-[20px] justify-between md:h-[10vmin] items-center lg:h-[12vmin] p-3"
+    >
+      <span
+        class="flex text-blue-800 font-extrabold text-[14px] sm:text-2xl lg:text-4xl items-center whitespace-nowrap overflow-hidden"
+      >
+        PW Skills
+      </span>
+
+      <ul
+        class="hidden md:flex justify-center text-[2.5vmin] lg:text-3xl font-bold space-x-6"
+      >
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+
+      <div
+        class="flex justify-end whitespace-nowrap overflow-visible md:hidden"
+      >
+        <img src="hamburger.svg" alt="" class="min-w-5 max-w-5" />
+      </div>
+
+      <button
+        class="hidden md:block bg-blue-800 text-white rounded-sm text-[1.5vmin] font-bold p-1.5 lg:p-3 lg:text-[2.5vmin]"
+      >
+        Log in/Sign Up
+      </button>
+    </nav>
+    <div class="main">
+      <img
+        src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/mobile.jpg"
+        alt=""
+        class="md:hidden w-full min-w-1/2 whitespace-nowrap overflow-visible min-h-160"
+      />
+      <img
+        src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/web.jpg"
+        alt=""
+        class="hidden w-full md:block whitespace-nowrap overflow-visible min-h-[50vmax]"
+      />
+    </div>
+    <h3
+      class="text-purple-900 font-extrabold text-center mt-[2vmax] text-[3vmin] sm:text-[3vmin] md:text-[4vmin] lg:text-[5vmin]"
+    >
+      "Pure Hardwork, No Shortcuts!"
+    </h3>
+    <div class="h-[1px] bg-yellow-400 mx-auto mt-[1vmax] max-w-[13vmin]"></div>
+    <div
+      class="logos flex flex-wrap w-full text-[3vmin] justify-around mt-[5vmin]"
+    >
+      <div class="flex flex-col items-center">
+        <div
+          class="courses w-[14vmin] h-[14vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          Books
+        </div>
+        <span class="text-white mt-1 text-[3vmin] font-extrabold">600+</span>
+        <p class="text-gray-500 font-extrabold text-[3vmin]">
+          Different Courses
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="enroll w-[14vmin] h-[14vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          Student
+        </div>
+        <span class="text-white mt-1 text-[3vmin] font-extrabold"
+          >700,000+</span
+        >
+        <p class="text-gray-500 font-extrabold text-[3vmin]">
+          Students Enrolled
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="transition w-[14vmin] h-[14vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          Card
+        </div>
+        <span class="text-white mt-1 text-[3vmin] font-extrabold">10,000+</span>
+        <p class="text-gray-500 font-extrabold text-[3vmin]">
+          Successful Transition
+        </p>
+      </div>
+    </div>
+    <h3
+      class="text-purple-900 font-extrabold text-center mt-[3vmax] text-[3vmin] sm:text-[3vmin] md:text-[4vmin] lg:text-[5vmin]"
+    >
+      Our Products
+    </h3>
+    <div class="h-[1px] bg-yellow-400 mx-auto mt-[1vmax] max-w-[13vmin]"></div>
+
+    <div
+      class="logos flex flex-wrap sm:flex-nowrap w-full space-x-4 items-center pl-[4vmin] pr-[4vmin] text-[3vmin] justify-around mt-[5vmin]"
+    >
+      <div class="flex flex-col items-center">
+        <div
+          class="courses w-[14vmin] h-[14vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          1st
+        </div>
+        <span class="text-white mt-1 text-[2vmin] font-extrabold"
+          >PW Skills Lab</span
+        >
+        <p
+          class="text-gray-500 w-[1/2vmin] border border-white text-center font-bold text-[1.5vmin]"
+        >
+          Supercharge your project development with our robust lab.
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="enroll w-[8vmin] h-[8vmin] rounded-full bg-red-400 flex vmin] justify-center items-center"
+        >
+          2nd
+        </div>
+        <span class="text-white mt-1 text-[2vmin] font-extrabold"
+          >Job Portal</span
+        >
+        <p
+          class="text-gray-500 w-[1/2vmin] text-center font-bold text-[1.5vmin]"
+        >
+          Use exceptional templates for a stand-out resume minus the sign up
+          process.
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="transition w-[8vmin] h-[8vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          3rd
+        </div>
+        <span class="text-white mt-1 text-[2vmin] font-extrabold"
+          >Experience Portal</span
+        >
+        <p
+          class="text-gray-500 w-[1/2vmin] text-center font-bold text-[1.5vmin]"
+        >
+          PW Skills's self-paced experience portal prioritises hands-on training
+          with 570+ internship projects.
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="transition w-[8vmin] h-[8vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          4th
+        </div>
+        <span class="text-white mt-1 text-[2vmin] font-extrabold">Network</span>
+        <p
+          class="text-gray-500 w-[1/2vmin] text-center font-bold text-[1.5vmin]"
+        >
+          Explore affiliate marketing opprotunities with PW Skills and attain
+          financial freedom.
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="transition w-[14vmin] h-[14vmin] rounded-full bg-red-400 flex justify-center items-center"
+        >
+          5th
+        </div>
+        <span class="text-white mt-1 text-[2vmin] font-extrabold"
+          >Hall of fame</span
+        >
+        <p
+          class="text-gray-500 w-[1/2vmin] text-center font-bold text-[1.5vmin]"
+        >
+          Our student placements and 100K+ career transitions speak volumes
+          about our courses.
+        </p>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 pb-[5vmax]">
+      <div class="w-full">
+        <img
+          src="https://pwskills.com/images/PWSkills-white.png"
+          alt=""
+          class="w-[20vmin] p-3"
+        />
+      </div>
+      <div class="content flex justify-around -mt-5">
+        <div class="first flex flex-col items-start text-green-50 text-[3vmin]">
+          <h3
+            class="text-white font-extrabold text-center mt-[3vmax] text-[3vmin] sm:text-[3vmin] md:text-[4vmin] lg:text-[5vmin]"
+          >
+            PW Skills
+          </h3>
+          <div class="h-[1px] bg-yellow-400 w-[16vmin]"></div>
+          <ul class="mt-[1.5vmin] text-[2.5vmin]">
+            <li>About Us</li>
+            <li>FAQs</li>
+            <li>Privacy policy</li>
+          </ul>
+        </div>
+        <div
+          class="second first flex flex-col items-start text-green-50 text-[3vmin]"
+        >
+          <h3
+            class="text-white font-extrabold text-center mt-[3vmax] text-[3vmin] sm:text-[3vmin] md:text-[4vmin] lg:text-[5vmin]"
+          >
+            Products
+          </h3>
+          <div class="h-[1px] bg-yellow-400 w-[16vmin]"></div>
+          <ul class="mt-[1.5vmin] text-[2.5vmin]">
+            <li>PW Skills Lab</li>
+            <li>Job Portal</li>
+            <li>Experience Portal</li>
+            <li>Become an affiliate</li>
+            <li>Hall of fame</li>
+          </ul>
+        </div>
+        <div
+          class="third first flex flex-col items-start text-green-50 text-[3vmin]"
+        >
+          <h3
+            class="text-white font-extrabold text-center mt-[3vmax] text-[3vmin] sm:text-[3vmin] md:text-[4vmin] lg:text-[5vmin]"
+          >
+            Links
+          </h3>
+          <div class="h-[1px] bg-yellow-400 w-[16vmin]"></div>
+          <ul class="mt-[1.5vmin] text-[2.5vmin]">
+            <li>Discord Channel</li>
+            <li>PW Youtube</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-300px);
+        }
+      }
+
+      @keyframes dragon {
+        0% {
+          transform: translateX(0vw);
+        }
+
+        100% {
+          transform: translateX(-100vw);
+        }
+      }
+      .dragonmotion {
+        animation: dragon 3s linear infinite;
+      }
+      .bounce-animation {
+        animation: bounce 1.5s ease;
+      }
+    </style>
+    <title>Dino Game</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-hidden">
+    <div class="scene w-screen h-screen">
+      <div
+        class="scene w-full h-full bg-[url(/assets/bg.png)] bg-[100vw_100vh] relative"
+      >
+        <div class="flex flex-col absolute w-full items-center mt-5 gap-5">
+          <div class="greet text-6xl font-bold">Welcome to Dino Game</div>
+          <div class="text-4xl font-bold">Score: <span id="score">00</span></div>
+        </div>
+
+        <img src="/assets/dino.png" class="w-50 absolute mt-190" id="dino" />
+        <img
+          src="/assets/dragon.png"
+          class="w-50 absolute mt-190 dragonmotion bottom-0 left-400"
+          id="dragon"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

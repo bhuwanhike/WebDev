@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-card">
+        <audio id="audio"><source src="/assets/music.mp3" /></audio>
+        <input type="range" class="seekbar" value="0" />
+        <div class="pause-play">Play</div>
+      </div>
+    </div>
+    <script>
+      let seekbar = document.querySelector(".seekbar");
+      let play = document.querySelector(".pause-play");
+      let song = document.getElementById("audio");
+
+      song.onloadedmetadata = () => {
+        seekbar.max = song.duration;
+        seekbar.value = song.currentTime;
+      };
+
+      song.ontimeupdate = () => {
+        seekbar.value = song.currentTime;
+      };
+      play.addEventListener("click", () => {
+        if (song.paused) {
+          song.play();
+          play.textContent = "Pause";
+        } else {
+          song.pause();
+          play.textContent = "Play";
+        }
+      });
+      seekbar.addEventListener("input", () => {
+        song.currentTime = seekbar.value;
+      });
+    </script>
+  </body>
+</html>

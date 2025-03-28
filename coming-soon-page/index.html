@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    body {
+      background-image: url(./images/background.png);
+      overflow: hidden;
+      /* position: absolute; */
+    }
+    .container {
+      width: 10vw;
+      height: 10vw;
+      background-image: url(./images/rocket.png);
+      position: absolute;
+      background-size: contain;
+      /* position: relative; */
+      /* background-color: red; */
+      bottom: 0;
+      right: 0;
+      animation: rocket 2s linear infinite;
+    }
+    @keyframes rocket {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100vh);
+      }
+    }
+    .logo {
+      padding: 5vh;
+      padding-left: 8vw;
+    }
+    .logo img {
+      width: 10vw;
+    }
+    a {
+      text-decoration: none;
+      color: red;
+    }
+    .main {
+      padding: 8vw;
+    }
+    h1 {
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 4vw;
+      font-weight: 100;
+    }
+    .learn {
+      padding: 1vw;
+      border: 1px solid white;
+      margin-top: 2vw;
+      display: flex;
+      align-items: center;
+      gap: 0.5vw;
+      width: 8vw;
+    }
+    .learn img {
+      width: 1vw;
+    }
+    .timer {
+      display: flex;
+      gap: 1vw;
+    }
+    .timer div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div class="container"></div>
+    <div class="logo"><img src="images/logo.png" alt="" /></div>
+    <div class="main">
+      <p>Website is under maintanance</p>
+      <h1>We're <a href="">Launching</a> Soon</h1>
+      <div class="timer">
+        <div>
+          <h2 id="days">00</h2>
+          <span>Days</span>
+        </div>
+        <div>
+          <h2 id="hours">00</h2>
+          <span>Hours</span>
+        </div>
+        <div>
+          <h2 id="minutes">00</h2>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <h2 id="seconds">00</h2>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+      <span class="learn"
+        >Learn more <img src="images/triangle.png" alt=""
+      /></span>
+    </div>
+    <script>
+      let countdown = new Date("Mar 9, 2025 23:35:00").getTime();
+      let x = setInterval(() => {
+        let today = new Date().getTime();
+        let time = countdown - today;
+        let dayst = Math.floor(time / 86400000);
+        let hourst = Math.floor((time % 86400000) / 3600000);
+        let minutest = Math.floor((time % 3600000) / 60000);
+        let secondst = Math.floor((time % 60000) / 1000);
+        let d = dayst < 10 ? "0" + dayst : dayst;
+        let h = hourst < 10 ? "0" + hourst : hourst;
+        let m = minutest < 10 ? "0" + minutest : minutest;
+        let s = secondst < 10 ? "0" + secondst : secondst;
+
+        days.innerHTML = d;
+        hours.innerHTML = h;
+        minutes.innerHTML = m;
+        seconds.innerHTML = s;
+        if (time <= 0) {
+          clearInterval(x);
+          days.innerHTML = "00";
+          hours.innerHTML = "00";
+          minutes.innerHTML = "00";
+          seconds.innerHTML = "00";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
