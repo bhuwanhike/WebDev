@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: pink;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 4vw;
+  padding: 1vw;
+}
+.logo {
+  font-size: 1vw;
+  font-weight: bold;
+}
+.table {
+  display: none;
+}

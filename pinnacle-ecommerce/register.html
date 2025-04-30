@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/loginstyle.css" />
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
+    <title>Pinnacle Ecommerce Store - Register</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo"><img src="/assets/logo.png" alt="" /></div>
+      <div class="bg-image">
+        <img src="/assets/bgimage.jpg" alt="" />
+      </div>
+      <div class="login">
+        <div class="content">
+          <h1>Join Pinnacle Labs Ecommerce Store</h1>
+          <p>Create Your Account and Start Your Premium Shopping Experience!</p>
+          <form action="/register" method="POST" class="credentials">
+            <input type="text" placeholder="Enter your full name" required />
+            <input type="email" placeholder="Enter your email" required />
+            <input
+              type="password"
+              autocomplete="new-password"
+              placeholder="Create a password"
+              required
+            />
+            <input
+              type="password"
+              autocomplete="new-password"
+              placeholder="Confirm your password"
+              required
+            />
+            <input type="submit" value="Register" id="submit" required />
+            <div class="form-footer">
+              <p>
+                Already have an account? <a href="login.html">Log in here</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/js/login.js"></script>
+  </body>
+</html>
