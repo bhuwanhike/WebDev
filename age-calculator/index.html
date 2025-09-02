@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age-Calculator</title>
+    <title>Age Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <h1>Age Calculator</h1>
-      <input type="date" id="birthdate" />
-      <button>Calculate Age</button>
-      <p id="result"></p>
+
+      <div class="input-group">
+        <label for="birthdate">Enter your birth date:</label>
+        <input type="date" id="birthdate" />
+      </div>
+
+      <button id="calculate-btn">Calculate Age</button> <div class="result-area">
+        <p id="result"></p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

@@ -1,16 +1,134 @@
+/* Basic Resets & Global Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container {
-  width: 40vw;
-  height: 50vw;
-  margin-top: 20vw;
-  margin-left: 20vw;
+body {
+  font-family: "Poppins", sans-serif; /* Using Google Font */
+  background: linear-gradient(
+    135deg,
+    #71b7e6,
+    #9b59b6
+  ); /* Soft gradient background */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  color: #333; /* Darker text for contrast */
 }
-input {
-  width: 30vh;
-  height: 5vh;
+
+/* Container Styling */
+.container {
+  background-color: #fff; /* White background for the card */
+  padding: 40px;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft, prominent shadow */
+  text-align: center;
+  width: 100%; /* Make it responsive */
+  max-width: 450px; /* Max width for larger screens */
+  min-height: 300px; /* Ensure a minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute items vertically */
+  align-items: center;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 2.2em; /* Larger heading */
+  color: #34495e; /* Darker blue-gray for heading */
+  margin-bottom: 30px; /* More space below heading */
+  font-weight: 600; /* Semi-bold */
+}
+
+/* Input Group and Label */
+.input-group {
+  margin-bottom: 25px; /* Space below the input group */
+  width: 100%;
+}
+
+label {
+  display: block; /* Make label appear on its own line */
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 8px; /* Space between label and input */
+  text-align: left; /* Align label text to left */
+  padding-left: 5px; /* Small indent */
+}
+
+/* Input Field Styling */
+input[type="date"] {
+  width: 100%; /* Full width within its group */
+  padding: 12px 15px; /* Good padding */
+  border: 2px solid #ccc; /* Subtle border */
+  border-radius: 8px; /* Rounded corners for input */
+  font-size: 1.1em; /* Larger font */
+  color: #444;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+input[type="date"]:focus {
+  border-color: #71b7e6; /* Highlight on focus */
+  box-shadow: 0 0 8px rgba(113, 183, 230, 0.4); /* Subtle glow on focus */
+}
+
+/* Button Styling */
+button {
+  background-color: #9b59b6; /* Purple color, matches gradient accent */
+  color: #fff; /* White text */
+  padding: 12px 25px; /* Generous padding */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3); /* Soft shadow matching button color */
+  margin-top: 15px; /* Space above button */
+}
+
+button:hover {
+  background-color: #8e44ad; /* Darker purple on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0); /* Press down effect */
+}
+
+/* Result Area Styling */
+.result-area {
+  margin-top: 30px; /* Space above result */
+  font-size: 1.2em; /* Larger result text */
+  color: #34495e; /* Darker color for result */
+  font-weight: 600; /* Bold result */
+  min-height: 2em; /* Ensure some space for the result */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+    margin: 20px; /* Adjust margin for smaller screens */
+    width: auto; /* Let content determine width up to max-width */
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  input[type="date"],
+  button {
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+
+  .result-area {
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
 }

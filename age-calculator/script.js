@@ -20,13 +20,13 @@ calculate.addEventListener("click", () => {
   }
   if (todayDate < date) {
     // agemonth--;
-    agedays = getdatysinmonth(year, agemonth) - date + todayDate;
+    agedays = getdatesinmonth(year, agemonth) - date + todayDate;
   }
 
   result.innerHTML = `Your age is ${ageyear} years, ${agemonth} months, ${agedays} days`;
 
 
-  function getdatysinmonth(year, month) {
+  function getdatesinmonth(year, month) {
     return new Date(year, month, 0).getDate();
   }
 });
